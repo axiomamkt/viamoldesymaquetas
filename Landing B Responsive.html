@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vía Moldes y Maquetas — Moldes para inyección de plástico · León, GTO</title>
+<meta name="description" content="Fabricantes de moldes para inyección de plástico especializados en sector calzado. León, Guanajuato. +7 años, +50 clientes, certificado Marca GTO.">
+<link rel="stylesheet" href="src/tokens.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--vm-paper); scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; overflow-x: hidden; }
+  #root { min-height: 100vh; }
+
+  /* Responsive container */
+  .vm-container-r { width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 20px; }
+  @media (min-width: 768px) { .vm-container-r { padding: 0 28px; } }
+  @media (min-width: 1024px) { .vm-container-r { padding: 0 40px; } }
+
+  /* Responsive section */
+  .vm-section-r { padding: 56px 0; }
+  @media (min-width: 768px) { .vm-section-r { padding: 80px 0; } }
+  @media (min-width: 1024px) { .vm-section-r { padding: 100px 0; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="src/SharedAssets.jsx"></script>
+<script type="text/babel" src="src/QuoteModal.jsx"></script>
+<script type="text/babel" src="src/DirectionB-Responsive.jsx"></script>
+
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    <DirectionBResponsive accent="#c9a557" />
+  );
+</script>
+</body>
+</html>
